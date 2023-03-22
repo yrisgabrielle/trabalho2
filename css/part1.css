@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#duck {
+    background-color: #CEE8E7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+}
+
+.top_page {
+    width: 100%;
+    height: 20%;
+}
+
+.bottom_page {
+    width: 100%;
+    height: 20%;
+
+}
+
+.content_main_login {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.login_content {
+    flex-grow: 1;
+}
+
+.login_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login_left,
+.login_center, 
+.login_right {
+    flex-basis: 33.33%;
+    flex-grow: 1;
+}
+
+.login_center {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: black;
+}
+
+#login_senha input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: border-box;
+    border: 3px solid #2797c4;
+}
+
+#botao_entrar{
+    width: 100%;
+    background-color: #CEE8E7;
+    border: none;
+    color: #2797c4;
+}
+
+.avatar_profile{
+    flex-basis: 30%;
+    flex-grow: 1; 
+}
