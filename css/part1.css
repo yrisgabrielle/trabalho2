@@ -2,11 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: rgb(223, 96, 255);
 }
 
 #duck {
-    background-color: #CEE8E7;
+    background-color: #000000;
 }
 
 .container {
@@ -15,20 +15,17 @@ body {
     height: 100vh;
 }
 
+
+
 .content {
     display: flex;
     flex-grow: 1;
 }
 
+
 .top_page {
     width: 100%;
     height: 20%;
-}
-
-.bottom_page {
-    width: 100%;
-    height: 20%;
-
 }
 
 .content_main_login {
@@ -46,35 +43,93 @@ body {
     flex-wrap: wrap;
 }
 
-.login_left,
-.login_center, 
-.login_right {
+.left_right,
+.login_center,
+.login_left {
     flex-basis: 33.33%;
     flex-grow: 1;
 }
 
-.login_center {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: black;
+.bottom_page {
+    width: 100%;
+    height: 20%;
+
 }
 
-#login_senha input[type=password]{
+.login_center {
+    box-shadow: rgba(247, 6, 195, 0.466) 0px 54px 55px, rgb(92, 8, 78) 0px -12px 30px, rgb(172, 49, 162) 0px 4px 6px, rgba(192, 8, 238, 0.801) 0px 12px 13px, rgba(199, 11, 224, 0.911) 0px -3px 5px;
+    background: rgb(134, 12, 165);
+    border-radius: 5px;
+    box-shadow: rgb(109, 4, 109);
+}
+
+.login_center {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_senha input[type=text] {
     width: 100%;
     padding: 12px 20px;
-    margin: border-box;
-    border: 3px solid #2797c4;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #360a5a;
 }
 
-#botao_entrar{
+#login_senha input[type=password] {
     width: 100%;
-    background-color: #CEE8E7;
-    border: none;
-    color: #2797c4;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #360542;
 }
 
-.avatar_profile{
+.avatar_profile {
     flex-basis: 30%;
-    flex-grow: 1; 
+    flex-grow: 1;
+}
+
+.form_login {
+    flex-basis: 70%;
+    flex-grow: 1;
+}
+
+#img_perfil {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+#login_senha label {
+    padding-left: 0%;
+}
+
+#botao_Entrar{
+    width: 100%;
+    background-color: #46094d;
+    border: none;
+    color: rgb(209, 78, 209);
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#botao_entrar:hover {
+    background-color: black;
+}
+
+#login_senha {
+    padding: 0%;
+    margin: 0px;
+    margin-top: 10px;
 }

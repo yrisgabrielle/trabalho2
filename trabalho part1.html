@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/part1.css" media="screen">
     <link rel="icon" type="image/png" href="511676.png"/>
+    <script type="text/javascript" src="JS/japartum.js"></script>
     <title>Organizador Pessoal</title>
 </head>
 <body id="duck">
@@ -15,27 +16,29 @@
 
         <main class="content">
             <div class="content_main_login">
-                <div class="login_content">
+            <div class="login_content">
+                <div class="left_right">
                 </div>
                 <div class="login_center">
                     <div class="avatar_profile">
-                        <img src="balao-de-fala.gif" id="img_perfil">
+                        <img src="img/balao-de-fala.gif" id="img_perfil">
+                    </div>
+                    <div class="form_login">
+                        <form id="login_senha">
+                        <label id="campo_email">𝙚-𝙢𝙖𝙞𝙡 </label><br>
+                        <input type="text" id="campo_email" placeholder="E-mail" required><br>
+    
+                        <label for="campo_senha">𝙨𝙚𝙣𝙝𝙖</label><br>
+                        <input type="password" id="campo_senha" placeholder="Senha" required><br>
+                        <button type="submit" id="botao_Entrar" onclick="validarlogin()">𝙀𝙣𝙩𝙧𝙖𝙧</button>
+                        
+                        </form>
                     </div>
                 </div>
-                <div class="left_right">
-                </div>
+                
                 <div class="login_left">
                 </div>
-                <div class="form_login">
-                    <label id="campo_email">e-mail</label>
-                    <imput type="text" id="campo_email"><br>
-
-                    <label for="campo_senha">senha</label><br>
-                    <imput type="password" id="campo_senha"><br>
-
-                    <buttom type="submit" id="botao_entrar" value="entrar">
-                    </form>
-                </div>
+            </div>
             </div>
         </main>
 
